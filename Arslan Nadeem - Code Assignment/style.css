@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+}
+
+/* Flex Box | Direction Flex */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Form Part | Left Part */
+
+.container {
+    width: 50%;
+    margin: 50px 0 0 100px;
+    order: 1;
+}
+
+.input-name {
+    position: relative;
+    margin: 20px auto;
+    width: 100%;
+    border-color: #1AAC02;
+}
+
+.name {
+    width: 45%;
+    padding: 12px 0 12px 12px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.text-name {
+    width: 91%;
+    padding: 12px 0 12px 12px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+/* To Hide Arrows */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Country Dropdown */
+
+.country {
+    width: 45%;
+    padding: 8px 0 8px 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+}
+
+/* Your Order | Right Part */
+
+.order {
+    width: 40%;
+    margin: 150px 100px 150px 40px;
+    background-color: white;
+    color: black;
+    padding: 5px 0 0 30px;
+    border-radius: 6px;
+    line-height: 50px;
+    order: 2;
+}
+
+.order-item {
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+/* Headings */
+
+h2 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 16px;
+    letter-spacing: 6%;
+    padding: 15px 0;
+    color: #575757;
+}
+
+/* Purchase Button */
+
+.button {
+    background-color: #1AAC02;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16.41px;
+    letter-spacing: 1.25%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 8px, 16px, 8px, 16px;
+    border: none;
+    outline: none;
+}
+
+/* Media Quries For Responsivenes */
+
+@media (max-width: 912px) {
+    .container {
+        width: 100%;
+        margin-left: 35px;
+        order: 2;
+    }
+
+    .order {
+        max-height: 20%;
+        margin-left: 35px;
+        width: 90%;
+        order: 1;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .name {
+        width: 91%;
+    }
+
+    .country {
+        width: 91%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .input-spaces {
+        margin-bottom: 20px;
+    }
+
+}
